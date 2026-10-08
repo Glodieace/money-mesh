@@ -1,0 +1,18 @@
+{
+  "name": "moneymesh-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["apps/web", "apps/chain"],
+  "scripts": {
+    "dev": "npm run dev --workspace=@moneymesh/web",
+    "build": "npm run build --workspace=@moneymesh/web",
+    "start": "npm run start --workspace=@moneymesh/web",
+    "typecheck": "npm run typecheck --workspace=@moneymesh/web",
+    "lint": "npm run lint --workspace=@moneymesh/web",
+    "blockchain:start": "npm run start --workspace=@moneymesh/chain",
+    "blockchain:compile": "npm run compile --workspace=@moneymesh/chain",
+    "blockchain:deploy": "npm run deploy --workspace=@moneymesh/chain",
+    "blockchain:test": "npm run test --workspace=@moneymesh/chain",
+    "blockchain:verify": "npm run verify --workspace=@moneymesh/chain"
+  }
+}
